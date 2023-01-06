@@ -1,14 +1,21 @@
 export default class B2D {
   static convert(binary) {
-    var decimal = 0;
-    var b = String(binary);
-    var len = b.length;
-    var j = len - 1;
-    var i = 0;
+    let decimal = 0;
 
-    for (i; i < len; i++) {
-      decimal += b.charAt(i) * Math.pow(2, j);
-      j--;
+    let input = String(binary);
+
+    let length = input.length;
+
+    let msb = length - 1;
+
+    let iterator = 0;
+
+    while (iterator < length) {
+      decimal += input.charAt(iterator) * Math.pow(2, msb);
+
+      msb--;
+
+      iterator++;
     }
 
     return decimal;
