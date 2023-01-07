@@ -1,3 +1,4 @@
 @import "./reset.css";
+@import "./global.css";
 @import "./components/btn.css";
 @import "./components/input.css";
