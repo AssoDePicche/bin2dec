@@ -1,0 +1,23 @@
+.btn {
+  border: solid 0.25rem currentColor;
+  border-radius: 0.3rem;
+  color: var(--clr-neutral-alt);
+  display: inline-block;
+  font: bold 1.6rem sans-serif;
+  height: 4rem;
+  margin-bottom: 2rem;
+  padding: 0.8rem;
+  width: 24rem;
+}
+
+.btn:hover {
+  background-color: var(--clr-accent);
+  cursor: pointer;
+  transition: background-color ease 0.3s;
+}
+
+.btn:disabled {
+  background: none;
+  opacity: 0.5;
+  transition: opacity ease 0.3s;
+}

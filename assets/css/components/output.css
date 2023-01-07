@@ -1,0 +1,8 @@
+#output {
+  color: var(--clr-neutral-alt);
+  display: block;
+  font: bold 1.8rem sans-serif;
+  height: 4rem;
+  margin-bottom: 2rem;
+  width: 24rem;
+}
