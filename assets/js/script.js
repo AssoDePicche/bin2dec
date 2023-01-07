@@ -19,17 +19,21 @@ input.addEventListener("input", () => {
 
   if (value.length === 0) {
     input.value = "";
+
     output.value = "";
+
     clear.setAttribute("disabled", "true");
+
+    return;
   }
 
-  if (value.length > 0) {
-    clear.removeAttribute("disabled");
-  }
-
-  if (!value.match(/^[01]+$/) && value.length > 0) {
+  if (!value.match(/^[01]+$/)) {
     input.value = input.value.substring(0, value.length - 1);
+
+    return;
   }
+
+  clear.removeAttribute("disabled");
 
   output.value = B2D.convert(input.value);
 });
