@@ -4,14 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <script defer type="module" src="./assets/js/script.js"></script>
     <title>Bin2Dec</title>
   </head>
   <body>
-    <input type="text" name="" id="binary" maxlength="8" autofocus />
-    <button id="b2d" disabled>Bin2Dec</button>
-    <button id="clear" disabled>Clear</button>
-    <input type="text" name="" id="output" disabled readonly />
+    <main class="container">
+      <input type="text" name="" class="" id="binary" maxlength="8" autofocus />
+
+      <input type="text" name="" class="" id="output" disabled readonly />
+
+      <div class="wrappler">
+        <button class="btn" id="b2d" disabled>Convert</button>
+
+        <button class="btn" id="clear" disabled>Clear</button>
+      </div>
+    </main>
   </body>
 </html>
