@@ -11,8 +11,11 @@ const clear = document.getElementById("clear");
 
 clear.addEventListener("click", () => {
   input.value = "";
+
   output.value = "";
+
   AttributeToggle.disable(b2d);
+
   AttributeToggle.disable(clear);
 });
 
@@ -27,8 +30,11 @@ input.addEventListener("input", () => {
 
   if (!value.match(/^[01]+$/)) {
     alert("Type neither 0 or 1");
+
     input.value = "";
+
     AttributeToggle.disable(b2d);
+
     AttributeToggle.disable(clear);
   }
 });
