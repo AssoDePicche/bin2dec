@@ -7,6 +7,7 @@
 .btn {
   border: solid 0.25rem var(--clr-neutral-alt);
   border-radius: 0.3rem;
+  display: block;
   font: bold 1.6rem sans-serif;
   height: 4rem;
   margin-bottom: 2rem;
