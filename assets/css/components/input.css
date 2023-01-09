@@ -4,9 +4,9 @@
   color: var(--clr-neutral-alt);
   display: block;
   font: bold 1.8rem sans-serif;
+  height: 4rem;
   margin-bottom: 2rem;
   padding: 0.8rem;
-  height: 4rem;
   width: 24rem;
 }
 
