@@ -1,28 +1,32 @@
-import B2D from "./modules/B2D.js";
+import B2D from './modules/B2D.js';
 
-const input = document.getElementById("input");
+const input = document.getElementById('input');
 
-const output = document.getElementById("output");
+const output = document.getElementById('output');
 
-const clear = document.getElementById("clear");
+const clear = document.getElementById('clear');
 
-clear.addEventListener("click", () => {
-  input.value = "";
+clear.addEventListener('click', () => {
+  input.value = '';
 
-  output.value = "";
+  output.value = '';
 
-  clear.setAttribute("disabled", "true");
+  clear.classList.add('disabled');
+
+  clear.setAttribute('disabled', 'true');
 });
 
-input.addEventListener("input", () => {
+input.addEventListener('input', () => {
   let value = input.value;
 
   if (value.length === 0) {
-    input.value = "";
+    input.value = '';
 
-    output.value = "";
+    output.value = '';
 
-    clear.setAttribute("disabled", "true");
+    clear.classList.add('disabled');
+
+    clear.setAttribute('disabled', 'true');
 
     return;
   }
@@ -33,7 +37,9 @@ input.addEventListener("input", () => {
     return;
   }
 
-  clear.removeAttribute("disabled");
+  clear.classList.remove('disabled');
+  
+  clear.removeAttribute('disabled');
 
   output.value = B2D.convert(input.value);
 });

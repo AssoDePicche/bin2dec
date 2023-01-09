@@ -1,7 +1,14 @@
 .btn,
-.btn:disabled,
-.btn:disabled.btn:hover {
+.disabled,
+.disabled.btn:hover {
   color: var(--clr-neutral-alt);
+}
+
+.disabled,
+.disabled.btn:hover {
+  background: none;
+  cursor: default;
+  opacity: 0.5;
 }
 
 .btn {
@@ -14,11 +21,6 @@
   padding: 0.8rem;
   transition: all ease 0.3s;
   width: 24rem;
-}
-
-.btn:disabled {
-  background: none;
-  opacity: 0.5;
 }
 
 .btn:hover {
