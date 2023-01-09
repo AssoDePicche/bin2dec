@@ -1,12 +1,11 @@
-@import "./reset.css";
-@import "./global.css";
-@import "./components/title.css";
-@import "./components/input.css";
-@import "./components/output.css";
-@import "./components/btn.css";
+@import './reset.css';
+@import './global.css';
+@import './components/title.css';
+@import './components/input.css';
+@import './components/output.css';
+@import './components/btn.css';
 
 :root {
-  --clr-accent: #eb5e28;
   --clr-neutral: #252422;
   --clr-neutral-alt: #ccc5b9;
 }
@@ -14,8 +13,7 @@
 html {
   background-color: var(--clr-neutral);
   display: grid;
-  place-items: center;
-  height: 100vh;
   font-size: 62.5%;
-  width: 100vw;
+  height: 100vh;
+  place-items: center;
 }
