@@ -1,23 +1,27 @@
-.btn {
-  border: solid 0.25rem currentColor;
-  border-radius: 0.3rem;
+.btn,
+.btn:disabled,
+.btn:disabled.btn:hover {
   color: var(--clr-neutral-alt);
-  display: inline-block;
+}
+
+.btn {
+  border: solid 0.25rem var(--clr-neutral-alt);
+  border-radius: 0.3rem;
   font: bold 1.6rem sans-serif;
   height: 4rem;
   margin-bottom: 2rem;
   padding: 0.8rem;
+  transition: all ease 0.3s;
   width: 24rem;
-}
-
-.btn:hover {
-  background-color: var(--clr-accent);
-  cursor: pointer;
-  transition: background-color ease 0.3s;
 }
 
 .btn:disabled {
   background: none;
   opacity: 0.5;
-  transition: opacity ease 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--clr-neutral-alt);
+  color: var(--clr-neutral);
+  cursor: pointer;
 }
